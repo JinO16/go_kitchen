@@ -1,16 +1,96 @@
 {
-	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
-		{
-			"path": "pages/index/index",
+	"pages": [{
+			"path": "pages/index/login/index",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationBarTitleText": "登录"
+			}
+		},
+		{
+			"path": "pages/index/register/index",
+			"style": {
+				"navigationBarTitleText": "注册"
+			}
+		},
+		{
+			"path": "pages/index/home/kitchenCircle/index",
+			"style": {
+				"navigationBarTitleText": "厨圈"
+			}
+		},
+		{
+			"path": "pages/index/home/kitchenCircle/detail",
+			"style": {
+				"navigationBarTitleText": "美食详情"
+			}
+		},
+		{
+			"path": "pages/index/home/message/index",
+			"style": {
+				"navigationBarTitleText": "消息"
+			}
+		},
+		{
+			"path": "pages/index/home/shoppingMail/index",
+			"style": {
+				"navigationBarTitleText": "市场"
+			}
+		},
+		{
+			"path": "pages/index/home/mine/index",
+			"style": {
+				"navigationBarTitleText": "我的"
+			}
+		},
+		{
+			"path": "pages/index/home/mine/edit",
+			"style": {
+				"navigationBarTitleText": "编辑个人资料"
 			}
 		}
+
 	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"backgroundColor": "#F8F8F8",
+		"color": "#8F8F94",
+		"selectedColor": "#FF4500",
+		"list": [{
+				"pagePath": "pages/index/home/kitchenCircle/index",
+				"text": "厨圈",
+				"iconPath": "./static/img/tabBar/首页.png",
+				"selectedIconPath": "./static/img/tabBar/首页A.png"
+			},
+			{
+				"pagePath": "pages/index/home/shoppingMail/index",
+				"text": "市场",
+				"iconPath": "./static/img/tabBar/发现.png",
+				"selectedIconPath": "./static/img/tabBar/发现A.png"
+			},
+			{
+				"pagePath": "pages/index/home/message/index",
+				"text": "消息",
+				"iconPath": "./static/img/tabBar/消息.png",
+				"selectedIconPath": "./static/img/tabBar/消息A.png"
+			},
+			{
+				"pagePath": "pages/index/home/mine/index",
+				"text": "我的",
+				"iconPath": "./static/img/tabBar/我的.png",
+				"selectedIconPath": "./static/img/tabBar/我的A.png"
+			}
+		]
+	},
+	"condition": {
+		"current": 0,
+		"list": [{
+			"name": "",
+			"path": "",
+			"query": ""
+		}]
 	}
 }
